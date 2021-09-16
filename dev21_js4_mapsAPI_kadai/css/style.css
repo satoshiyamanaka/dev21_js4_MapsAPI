@@ -1,0 +1,144 @@
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        margin-right:auto; 
+        margin-left:auto
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+
+      }
+      
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+      
+      #infowindow-content {
+        display: none;
+      }
+      
+      #map #infowindow-content {
+        display: inline;
+      }
+      
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+      
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+      
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+      
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 200px;
+        height: 28px;
+
+      }
+      
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+      
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      
+      #target {
+        width: 345px;
+      }
+
+#app-name{
+    text-align: center;
+}
+
+.map_wrapper {
+    position: relative; /* 子要素の基準とする */
+    width:100%;
+    padding-top:56.25%; /* 幅の 56.25% を高さとする場合（16:9）*/
+    border: 1px solid #CCC;  
+  }
+   
+  .map_wrapper .gmap {
+    position: absolute; /* 親要素のパディング領域に配置 */
+    width: 100%; /* 親コンテナの幅いっぱいに表示 */
+    height: 100%; /* 親コンテナの高さいっぱいに表示 */
+    top: 0;
+    left: 0;
+  } 
+
+.border{
+    border: 10px border #357cc7;
+    font-size: 36px;
+  }
+
+img{
+       
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+   
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+}
+
+.gmap{
+    padding: 0;
+    height: 10px;
+}
+
+footer{
+    background-position: bottom;
+}
